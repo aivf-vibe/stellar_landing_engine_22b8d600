@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeCoder - AI-Powered Code Generation Platform</title>
+    <meta name="description" content="Transform your ideas into production-ready code with VibeCoder's AI-powered development platform. Build faster, smarter, and more efficiently.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">VibeCoder</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="cta-button">Get Started</button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Code at the Speed of Thought
+                    <span class="gradient-text">with AI</span>
+                </h1>
+                <p class="hero-description">
+                    Transform your ideas into production-ready applications in minutes. 
+                    VibeCoder uses advanced AI to understand your requirements and generate 
+                    clean, efficient code that scales with your business.
+                </p>
+                <div class="hero-buttons">
+                    <button class="primary-button">Start Building Free</button>
+                    <button class="secondary-button">Watch Demo</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10x</span>
+                        <span class="stat-label">Faster Development</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Active Developers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-btn close"></span>
+                        <span class="terminal-btn minimize"></span>
+                        <span class="terminal-btn maximize"></span>
+                    </div>
+                    <div class="terminal-title">vibe-coder@terminal: ~/project</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command" id="typewriter"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <div class="terminal-output" id="terminal-output"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose VibeCoder?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Generate complete applications in minutes, not weeks. Our AI understands your requirements and builds production-ready code instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Precision Engineered</h3>
+                    <p>Get clean, maintainable code that follows best practices and scales with your business needs. No technical debt, just pure innovation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Full Stack Support</h3>
+                    <p>From frontend to backend, databases to APIs - generate complete applications with modern tech stacks like React, Node.js, Python, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Enterprise Ready</h3>
+                    <p>Built-in security, testing, and deployment configurations. Deploy to cloud platforms with a single command.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Real-time Updates</h3>
+                    <p>Iterate and refine your application in real-time. Make changes and see them reflected instantly without restarting your development server.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Team Collaboration</h3>
+                    <p>Share projects, review code, and collaborate with your team seamlessly. Built-in version control and project management features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How does VibeCoder work?</h3>
+                    <p>VibeCoder uses advanced AI models trained on millions of high-quality code repositories. Simply describe your application requirements in natural language, and our AI generates complete, production-ready code that follows industry best practices.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What programming languages are supported?</h3>
+                    <p>We support all major programming languages and frameworks including JavaScript/TypeScript, Python, React, Node.js, Next.js, Vue.js, Express, FastAPI, and many more. New languages and frameworks are added regularly.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is the generated code secure and production-ready?</h3>
+                    <p>Absolutely! All generated code includes security best practices, input validation, error handling, and follows OWASP guidelines. We also provide automated testing and deployment configurations.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I customize the generated code?</h3>
+                    <p>Yes! The generated code is fully customizable. You can modify any part of it, and our AI will help you make changes while maintaining code quality and consistency.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How much does VibeCoder cost?</h3>
+                    <p>We offer a free tier with limited features, and paid plans starting at $29/month for individuals and $99/month for teams. Enterprise plans are also available with custom pricing.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do I need coding experience to use VibeCoder?</h3>
+                    <p>While coding experience is helpful, it's not required. VibeCoder is designed to be accessible to both experienced developers and beginners. Our intuitive interface guides you through the process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>VibeCoder</h3>
+                    <p>Transforming ideas into code at the speed of thought.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#security">Security</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Developers</h4>
+                        <ul>
+                            <li><a href="#docs">Documentation</a></li>
+                            <li><a href="#api">API Reference</a></li>
+                            <li><a href="#examples">Examples</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#help">Help Center</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#status">Status</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VibeCoder. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
